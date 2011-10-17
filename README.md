@@ -10,14 +10,14 @@ This will help update hex color values of words (that your cursor is currently o
 
 ```vimscript
 "Update a hex value up/down a shade
-function! UpdateHex(operator, shade)
+function! HexUpdate(operator, shade)
     let hex = expand("<cword>")
     let newHex = system("php ~/.vim/cssScript/hex.php ". hex ." ". a:operator . a:shade)
     execute "normal ciw". newHex
 endfunction
 
-nnoremap <F8> :call UpdateHex("-",1)<CR>
-nnoremap <F9> :call UpdateHex("+",1)<CR>
+nnoremap <F8> :call HexUpdate("-",1)<CR>
+nnoremap <F9> :call HexUpdate("+",1)<CR>
 ```
 
 

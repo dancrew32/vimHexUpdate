@@ -1,10 +1,10 @@
-== HexUpdate ==
-=== What it does ===
+## HexUpdate ## 
+### What it does ###
 Update the hex color value of the word that your cursor is currently 
 on up or down a shade.
 
 
-=== Installation ===
+### Installation ###
 - Move `cssScript` into `~/.vim/`
 - Add the following to your `~/.vimrc` (remap to whatever you prefer)
 
@@ -27,11 +27,12 @@ on up or down a shade.
 - hit `<F8>` to go down one shade
 - enjoy
 
-=== Where could this be useful? ===
+### Where could this be useful? ###
 Imagine you need to quickly add a :hover and an :active pseudo state
 to some css selection:
 
 - First do this:
+
 	a {
 		color: #0f0;	
 	}
@@ -46,6 +47,7 @@ to some css selection:
 - Move to the :active color and hit <F9> two times to go up two shades
 
 You should end up with this:
+
 	a {
 		color: #0f0;	
 	}

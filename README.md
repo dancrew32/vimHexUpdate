@@ -7,6 +7,7 @@ This will help update hex color values of words (that your cursor is currently o
 - Move `/cssScript` into `~/.vim/`
 - Add the following to your `~/.vimrc` (remap to whatever you prefer)
 
+
     "Update a hex value up/down a shade
     function! UpdateHex(operator, shade)
         let hex = expand("<cword>")
@@ -17,11 +18,14 @@ This will help update hex color values of words (that your cursor is currently o
     nnoremap <F8> :call UpdateHex("-",1)<CR>
     nnoremap <F9> :call UpdateHex("+",1)<CR>
 
+
 - run `:so %` in your `~/.vimrc` file or restart vim
 - move your cursor over a hex color value, e.g.
 
+
     /* your cursor could be here: #f0|0f00; */
     background-color: #f00f00;
+
 
 - hit `<F9>` to go up one shade
 - hit `<F8>` to go down one shade

@@ -4,7 +4,7 @@ This will help update hex color values of words (that your cursor is currently o
 
 
 ### Installation
-- Move `cssScript` into `~/.vim/`
+- Move `/cssScript` into `~/.vim/`
 - Add the following to your `~/.vimrc` (remap to whatever you prefer)
 
     "Update a hex value up/down a shade
@@ -27,11 +27,11 @@ This will help update hex color values of words (that your cursor is currently o
 - hit `<F8>` to go down one shade
 - enjoy
 
-### Where could this be useful?
+### Where would this be useful?
 Imagine you need to quickly add a :hover and an :active pseudo state
 to some css selection:
 
-- First do this:
+First do this:
 
     a {
         color: #0f0;	
@@ -43,8 +43,9 @@ to some css selection:
         color: #0f0;	
     }
 
-- Move to the :hover color and hit <F9> to go up one shade
-- Move to the :active color and hit <F9> two times to go up two shades
+
+* Move to the :hover color and hit <F9> to go up one shade
+* Move to the :active color and hit <F9> two times to go up two shades
 
 You should end up with this:
 
